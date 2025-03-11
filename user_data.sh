@@ -13,8 +13,11 @@ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-# Exibe versão do Docker e Docker Compose
+# Instala o cliente MySQL
+sudo apt install -y mysql-client-core-8.0
+
+# Exibe versão do Docker, Docker Compose e MySQL
 docker --version
 docker-compose --version
-
+mysql --version
 
